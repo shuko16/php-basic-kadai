@@ -7,7 +7,7 @@
 
   <body>
     <p>
-    <?php
+   <?php
 class Food
 {
   private $name;
@@ -19,9 +19,9 @@ class Food
     $this->price = $price;
   }
 
-  public function show_name()
+  public function show_price()
   {
-    echo $this->name . '<br>';
+    echo $this->price . '<br>';
   }
 }
 
@@ -33,12 +33,12 @@ class Animal
 
   public function __construct(string $name, int $height, int $weight)
   {
-    $this->name - $name;
+    $this->name = $name;
     $this->height = $height;
     $this->weight = $weight;
   }
 
-  public function show_name()
+  public function show_height()
   {
     echo $this->height . '<br>';
   }
@@ -51,7 +51,12 @@ $animal = new Animal('dog', 60, 5000);
 print_r($food);
 print_r($animal);
 
+$food->show_price();
+$animal->show_height();
+
+
 ?>
+
 
 
 </p>
